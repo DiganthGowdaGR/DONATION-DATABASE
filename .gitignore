@@ -1,0 +1,291 @@
+# ================================
+# BLOOD & ORGAN DONATION MANAGEMENT SYSTEM
+# .gitignore file
+# ================================
+
+# ================================
+# ENVIRONMENT & SECRETS
+# ================================
+# Environment variables (contains database passwords)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database credentials
+config/database.json
+config/secrets.json
+
+# ================================
+# NODE.JS & NPM
+# ================================
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package manager lock files (keep one, ignore others)
+# yarn.lock
+# pnpm-lock.yaml
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# ================================
+# FRONTEND (REACT/VITE)
+# ================================
+# Build outputs
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# Vite cache
+frontend/.vite/
+frontend/vite.config.js.timestamp-*
+
+# Static files
+frontend/public/uploads/
+frontend/public/temp/
+
+# ================================
+# BACKEND (NODE.JS/EXPRESS)
+# ================================
+# Build outputs
+backend/dist/
+backend/build/
+
+# Logs
+backend/logs/
+*.log
+
+# Uploads and temporary files
+backend/uploads/
+backend/temp/
+backend/public/uploads/
+
+# ================================
+# DATABASE
+# ================================
+# Database files (if using SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql.backup
+*.dump
+database_backup_*.sql
+
+# MySQL specific
+mysql-bin.*
+*.frm
+*.ibd
+*.MYD
+*.MYI
+
+# ================================
+# DEVELOPMENT TOOLS
+# ================================
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# VS Code settings (keep workspace settings, ignore user settings)
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+
+# ================================
+# OPERATING SYSTEM
+# ================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ================================
+# TEMPORARY & CACHE FILES
+# ================================
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Cache directories
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# ESLint cache
+.eslintcache
+
+# Prettier cache
+.prettiercache
+
+# ================================
+# TESTING
+# ================================
+# Test coverage
+coverage/
+.coverage
+htmlcov/
+
+# Jest
+jest.config.js.backup
+
+# ================================
+# DOCUMENTATION & ASSETS
+# ================================
+# Generated documentation
+docs/build/
+docs/.docusaurus/
+
+# Large media files (add specific extensions as needed)
+*.mov
+*.mp4
+*.avi
+*.wmv
+*.flv
+*.webm
+
+# Large images (uncomment if you have large image files)
+# *.psd
+# *.ai
+# *.eps
+
+# ================================
+# DEPLOYMENT & PRODUCTION
+# ================================
+# Production builds
+build/
+dist/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# ================================
+# SECURITY & CERTIFICATES
+# ================================
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_rsa.pub
+*.ppk
+
+# ================================
+# PROJECT SPECIFIC
+# ================================
+# Blood bank specific uploads
+uploads/donor-photos/
+uploads/patient-documents/
+uploads/medical-reports/
+
+# Backup files
+backup/
+*.backup
+
+# Log files specific to donation system
+donation-logs/
+audit-logs/
+system-logs/
+
+# Reports and exports
+reports/generated/
+exports/
+*.xlsx
+*.csv
+*.pdf
+
+# ================================
+# OPTIONAL: KEEP CERTAIN FILES
+# ================================
+# Force include important files even if they match patterns above
+!.gitkeep
+!.env.example
+!README.md
+!LICENSE
+
+# Keep sample configuration files
+!config/database.example.json
+!config/app.example.json
+
+# ================================
+# COMMENTS FOR TEAM
+# ================================
+# This .gitignore is configured for:
+# - Node.js backend with Express
+# - React frontend with Vite
+# - MySQL database
+# - Blood & organ donation management system
+#
+# Remember to:
+# 1. Never commit .env files with real passwords
+# 2. Keep .env.example for team reference
+# 3. Add any new sensitive files to this list
+# 4. Review before committing large files
